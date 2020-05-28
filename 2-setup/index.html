@@ -15,15 +15,10 @@
       crossorigin
       src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
     ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </body>
-  <script>
-    const Title = React.createElement(
-      "div",
-      {
-        className: "title",
-      },
-      "Hello babe"
-    );
+  <script type="text/babel">
+    const Title = <div class="title">Hello babe</div>;
 
     const Image = React.createElement("img", {
       src: "https://loremflickr.com/320/240",
