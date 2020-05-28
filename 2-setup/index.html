@@ -17,9 +17,21 @@
     ></script>
   </body>
   <script>
-    const Hello = React.createElement("div", null, "Hello babe");
+    const Title = React.createElement(
+      "div",
+      {
+        className: "title",
+      },
+      "Hello babe"
+    );
+
+    const Image = React.createElement("img", {
+      src: "https://loremflickr.com/320/240",
+    });
+
+    const App = React.createElement("div", null, Title, Image);
 
     const root = document.getElementById("root");
-    ReactDOM.render(Hello, root);
+    ReactDOM.render(App, root);
   </script>
 </html>
