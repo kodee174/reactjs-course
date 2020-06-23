@@ -14,10 +14,9 @@ class App extends Component {
         },
         {
           title: "Đá fifa",
-          isComplete: true,
+          isComplete: "abc",
         },
         {
-          title: "Coffee",
           isComplete: false,
         },
       ],
